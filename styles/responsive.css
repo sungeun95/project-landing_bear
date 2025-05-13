@@ -1,1 +1,21 @@
 /* responsive.css */
+/* desktop 1250~1920 */
+/* Tablet 1249~850 */
+@media screen and (max-width:1249px){
+    #wrap .intro .container{max-width: 864px;}
+    #wrap .intro .container h1:nth-child(2){
+        font-size: 3.125rem;
+    }
+    #wrap .intro .container .sponsor_btn{
+        font-size: 1.375rem;
+        width: 270px;
+        line-height: 62px;
+    }
+    #wrap .intro .container .sponsor_question{
+        width: 333px; height: 54px; 
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+}/* e:Tablet */
+/* Mobile 849~320 */
+@media screen and (max-width:849px){}
