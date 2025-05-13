@@ -2,7 +2,6 @@
 /* desktop 1250~1920 */
 /* Tablet 1249~850 */
 @media screen and (max-width:1249px){
-    #wrap .intro .container{max-width: 864px;}
     #wrap .intro .container h1:nth-child(2){
         font-size: 3.125rem;
     }
