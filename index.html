@@ -14,6 +14,7 @@
 </head>
 <body>
     <div id="wrap">
+        <!-- 1행 -->
         <section class="intro">
             <div class="container">
                 <h1><a href="#"><img src="./images/logo.jpg" alt="WWF공식홈페이지가기"></a></h1>
@@ -22,6 +23,26 @@
                 <a href="#" class="sponsor_question">후원관련 자주 묻는 질문 보기</a>
             </div><!-- e: container -->
         </section><!-- e: intro -->
+        <!-- 2행 퀴즈 -->
+        <section class="quiz">
+            <div class="container">
+                <form action="#" method="get" id="left_quiz">
+                    <h2>Quiz</h2>
+                    <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
+                    <div class="list">
+                        <label><input type="radio" name="quiz" value="q30"><span>30%</span></label>
+                        <label><input type="radio" name="quiz" value="q40"><span>40%</span></label>
+                        <label><input type="radio" name="quiz" value="q50"><span>50%</span></label>
+                        <label><input type="radio" name="quiz" value="q60"><span>60%</span></label>
+                    </div>
+                    <button type="button" id="answer_btn">정답 확인 하기</button>
+                </form>
+                <div class="right">
+                    <p><img src="./images/quiz_contents.png" alt="퀴즈에 참여한 사람 수"></p>
+                    <p>*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+                </div>
+            </div>
+        </section><!-- e:quiz -->
     </div><!-- e : wrap -->
 </body>
 </html>

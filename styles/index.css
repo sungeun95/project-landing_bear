@@ -1,6 +1,6 @@
 /* index.css */
 /* ==================== 1행, 북극곰 후원 안내 */
-#wrap {}
+#wrap {} /* 기본값 유지를 위해 작성하지 않음. 기본값 -> 너비는 부모의 100%, 높이는 내용만큼 */
 #wrap .intro{
     height:100vh;
     background:url(../images/bg1.png) no-repeat center / cover;
@@ -14,7 +14,7 @@
 }
 #wrap .intro .container{ /* 크기를 적용한 기준으로 최대와 최소값 지정 */
     position: relative; top:100px;
-    z-index: 100; max-width: 1250px; min-width: 320px;
+    z-index: 100; max-width: 1250px; min-width: 320px; /* 반응형 */
     border:5px solid yellow;
     margin: 0 auto; /* 디바이스 크기보다 width가 작은 블록요소를 가운데 배치하는 방법 */
     /* 형제와 형제는 margi, 부모와 자식은 padding */
@@ -54,6 +54,55 @@
     padding: 10px 30px;
 }
 /* ==================== 2행, 퀴즈 */
+#wrap .quiz{
+    background:url(../images/quiz_bg.png) center / cover; /* 배경을 꽉 채워야 할때 자주사용 */
+}
+#wrap .quiz .container{
+    width:1250px; margin: 0 auto;
+    border: 1px solid aqua;
+    display: grid; /* 완쪽퀴즈, 오른쪽 참여현황 정렬 grid */
+    grid-template-columns:1fr 1fr;
+    padding: 150px 0;
+}
+#wrap .quiz .container #left_quiz{}
+#wrap .quiz .container #left_quiz * {color:#fff;}
+#wrap .quiz .container #left_quiz h2{
+    text-align: center;
+    font-size: 3.438rem;
+    margin-bottom: 38px;
+}
+#wrap .quiz .container #left_quiz p{font-size: 1.25rem;}
+#wrap .quiz .container #left_quiz .list{
+    display: grid;
+    grid-template-rows: repeat(4, 34px);
+    margin: 8px 0 38px;
+}
+#wrap .quiz .container #left_quiz .list label{
+}
+#wrap .quiz .container #left_quiz .list label input[value^=q]{display: none;}
+#wrap .quiz .container #left_quiz .list label input[value^=q]:checked + span{
+    background-image:url(../images/chk_on.png);
+}
+#wrap .quiz .container #left_quiz .list label span{
+    display:block;
+    font-size: 1.25rem;
+    background-image:url(../images/chk_off.png);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    padding-left:48px;
+    line-height: 34px;
+}
+#wrap .quiz .container #left_quiz #answer_btn{
+    background-color:#050505;
+    width:100%; height:54px;
+    border-radius:50px;
+}
+#wrap .quiz .container .right{text-align: right;padding: 69px 0;}
+#wrap .quiz .container .right p{}
+#wrap .quiz .container .right p:nth-child(1) {margin-bottom: 20px;}
+#wrap .quiz .container .right p:nth-child(1) img {}
+#wrap .quiz .container .right p:nth-child(2) {color:#fff;font-size: 1.25rem;}
+
 /* ==================== 3행, 새끼북극곰 이야기 */
 /* ==================== 4행, 빙하면적감소 */
 /* ==================== 5행, 인류재앙 */
