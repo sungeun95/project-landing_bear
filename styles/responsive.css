@@ -2,6 +2,7 @@
 /* desktop 1250~1920 */
 /* Tablet 1249~850 */
 @media screen and (max-width:1249px){
+    /* =============================================== s : 1행 intro */
     #wrap .intro{padding: 0 80px;}
     #wrap .intro .container{width: 100%;}
     #wrap .intro .container h1:nth-child(2){font-size: 3.125rem;}
@@ -15,8 +16,37 @@
         font-size: 1.25rem;
         line-height: 1.7;
     }
+    /* =============================================== e : 1행 */
+    /* =============================================== s : 2행 quiz */
+    #wrap .quiz {padding:150px 80px;}
+    /* =============================================== e : 2행 */
+    /* =============================================== s : 3행 video_bg */
+    #wrap .video_bg .container .sponsor_btn{
+        font-size: 1.375rem;
+        width: 270px;
+        line-height: 62px;
+    }
+    #wrap .video_bg .container h2{font-size: 2.5rem;}
+    /* =============================================== e : 3행 video_bg */
 }/* e:Tablet */
+
+
 /* Mobile 849~320 */
 @media screen and (max-width:849px){
+    /* =============================================== s : 1행 intro */
     #wrap .intro{padding: 0 15px;}
+    /* =============================================== e : 1행 */
+    /* =============================================== s : 2행 quiz */
+    #wrap .quiz {padding:70px 15px;}
+    #wrap .quiz .container {grid-template-columns:1fr;}
+    #wrap .quiz .container #left_quiz{margin-right: 0;}
+    #wrap .quiz .container #left_quiz .list{margin-bottom: 50px;}
+    #wrap .quiz .container .right p{margin: 0 auto;}
+    #wrap .quiz .container .right p:nth-child(1) img {width: 90%;}
+    /* =============================================== e : 2행 */
+    /* =============================================== s : 3행 video_bg */
+    #wrap .video_bg{padding: 50px 15px;}
+    #wrap .video_bg .container h2{font-size: 1.375rem;}
+    #wrap .video_bg .container iframe{height: 350px;}
+    /* =============================================== e : 3행 video_bg */
 }
