@@ -35,6 +35,7 @@
 @media screen and (max-width:849px){
     /* =============================================== s : 1행 intro */
     #wrap .intro{padding: 0 15px;}
+    #wrap .intro .container h1:nth-child(2){font-size: 1.875rem;}
     /* =============================================== e : 1행 */
     /* =============================================== s : 2행 quiz */
     #wrap .quiz {padding:70px 15px;}
