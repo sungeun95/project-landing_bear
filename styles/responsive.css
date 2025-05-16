@@ -28,7 +28,20 @@
     }
     #wrap .video_bg .container h2{font-size: 2.5rem;}
     /* =============================================== e : 3행 video_bg */
-}/* e:Tablet */
+    /* =============================================== s : 4행  */
+    #wrap .glacier_text{padding: 200px 80px;}
+    #wrap .glacier_text .container h2{font-size: 2.5rem;}
+    #wrap .glacier_text .container p{font-size: 1.375rem; margin: 40px 0;}
+    /* =============================================== e : 4행 .glacier_text */
+    /* =============================================== s : 5행  */
+    #wrap .disaster{padding: 200px 80px;}
+    #wrap .disaster .container h2{font-size: 2.5rem;}
+    #wrap .disaster .container>p{font-size: 1rem;}
+    #wrap .disaster .container .list li>p{font-size: 1rem;}
+    #wrap .disaster .container .list li .bg h3{font-size: 2.5rem;}
+    #wrap .disaster .container .list li .bg p{font-size: 1rem;}
+    /* =============================================== e : 5행 disaster */
+}/* e:T */
 
 
 /* Mobile 849~320 */
@@ -36,18 +49,51 @@
     /* =============================================== s : 1행 intro */
     #wrap .intro{padding: 0 15px;}
     #wrap .intro .container h1:nth-child(2){font-size: 1.875rem;}
+    #wrap .intro .container .sponsor_question{float: none; font-size: 1.25rem;}
     /* =============================================== e : 1행 */
     /* =============================================== s : 2행 quiz */
     #wrap .quiz {padding:70px 15px;}
     #wrap .quiz .container {grid-template-columns:1fr;}
     #wrap .quiz .container #left_quiz{margin-right: 0;}
-    #wrap .quiz .container #left_quiz .list{margin-bottom: 50px;}
-    #wrap .quiz .container .right p{margin: 0 auto;}
-    #wrap .quiz .container .right p:nth-child(1) img {width: 90%;}
+    #wrap .quiz .container #left_quiz>h2{
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 56px;
+    }
+    #wrap .quiz .container #left_quiz>p{font-size: 1.25rem;}
+    #wrap .quiz .container #left_quiz .list{ margin-bottom: 50px;}
+    #wrap .quiz .container .right p{ margin: 0 auto;}
+    #wrap .quiz .container .right p:nth-child(1) img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
     /* =============================================== e : 2행 */
     /* =============================================== s : 3행 video_bg */
     #wrap .video_bg{padding: 50px 15px;}
     #wrap .video_bg .container h2{font-size: 1.375rem;}
     #wrap .video_bg .container iframe{height: 350px;}
     /* =============================================== e : 3행 video_bg */
-}
+    /* =============================================== s : 4행  */
+    #wrap .glacier_text{padding: 70px 15px;}
+    #wrap .glacier_text .container h2{font-size: 1.375rem;}
+    #wrap .glacier_text .container h2 em::before{
+        top: 5px; 
+    }
+    #wrap .glacier_text .container p{font-size: 0.813rem; margin: 22px 0;}
+    /* =============================================== e : 4행 .glacier_text */
+    /* =============================================== s : 5행  */
+    #wrap .disaster{padding: 70px 15px;}
+    #wrap .disaster .container .list{flex-flow: column nowrap;}
+    #wrap .disaster .container h2{font-size: 1.375rem;}
+    #wrap .disaster .container>p{font-size: 0.813rem;}
+    #wrap .disaster .container .list li>p{
+        height: max-content; 
+        font-size: 0.813rem;
+    }
+    #wrap .disaster .container .list li .bg {height: 150px;}
+    #wrap .disaster .container .list li .bg h3{font-size: 1.375rem;}
+    #wrap .disaster .container .list li .bg p{font-size: 0.813rem;}
+    
+    /* =============================================== e : 5행 disaster */
+} /* e:M */
